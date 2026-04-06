@@ -45,13 +45,47 @@
 #     print(f"Seu salário é de {(salario * 1.10) - salario:.2f} \n")
 # if salario <= 1250:
 #     print (f"Seu salário é de {(salario * 1.50) - salario:.2f} \n")
+#
+#distancia = int(input("distância que você deseja percorrer em km "))
 
-distancia = int(input("distância que você deseja percorrer em km "))
+#if distancia <= 200:
+#     distanciaM = distancia * 0.5
+#    print(f" O preço da passagem ficou {distanciaM} \n")
 
-if distancia <= 200:
-     distanciaM = distancia * 0.5
-     print(f" O preço da passagem ficou {distanciaM} \n")
+#else:
+#    distanciaM = distancia * 0.45
+#print(f"O preço da passagem ficou {distanciaM} \n")
+#
+#gasto = float(input("gasto em kWh " ))
+#tipo = input("tipo de instalação R, I, ou C " )
+#
+#if tipo == "R":
+#    if gasto <= 500:
+#        conta= 0.4
+#    else :
+#        conta= 0.65
+#elif tipo == "I":
+#    if gasto <= 1000:
+#        conta= 0.55
+#    else:
+#        conta= 0.60
+#elif tipo == "C":
+#    if gasto <= 5000:
+#        conta= 0.55
+#    else:
+#        conta= 0.60
+#else: print("Tipo de instalação desconhecido")
+#
+#custo = gasto * conta
+#print(f"custo: {custo}")
 
+nota1 = float(input("nota 1 "))
+nota2 = float(input("nota 2 "))
+media = (nota1 + nota2) / 2
+
+if media >= 6:
+    print("você foi aprovado")
+elif media >= 4 and media < 6:
+        print("exame")
 else:
-    distanciaM = distancia * 0.45
-print(f"O preço da passagem ficou {distanciaM} \n")
+    print("Reprovado")
